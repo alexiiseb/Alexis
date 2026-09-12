@@ -3,331 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <title>Urban Style | Tienda de Ropa</title>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 { font-size: 24px; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover { text-decoration: underline; }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { transform: translateY(-3px); }
+
+        .about {
+            padding: 70px 10%;
+            text-align: center;
+            background: white;
+        }
+
+        .about h2 { margin-bottom: 20px; }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container navbar">
-
-            <a href="#" class="logo">
-                URBAN<span>STYLE</span>
-            </a>
-
-            <nav class="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#coleccion">Colección</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-
-            <div class="header-actions">
-                <button class="search-btn" aria-label="Buscar">
-                    🔍
-                </button>
-
-                <button class="cart-btn" aria-label="Carrito">
-                    🛒 <span class="cart-count">0</span>
-                </button>
-            </div>
-
-        </div>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+        </nav>
     </header>
 
-
-    <!-- HERO -->
     <main>
-
-        <section id="inicio" class="hero">
-
-            <div class="hero-content">
-
-                <p class="hero-subtitle">
-                    NUEVA COLECCIÓN 2026
-                </p>
-
-                <h1>
-                    Viste tu<br>
-                    <span>propio estilo.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Descubre nuestra nueva colección de prendas
-                    modernas, cómodas y diseñadas para destacar.
-                </p>
-
-                <a href="#coleccion" class="btn">
-                    Ver colección
-                </a>
-
-            </div>
-
+        <section class="hero" id="inicio">
+            <h2>¡Hola, mundo!</h2>
+            <p>
+                Esta es una página web creada utilizando únicamente
+                HTML y CSS. Puedes modificarla y convertirla en tu
+                propio proyecto.
+            </p>
+            <a href="#sobre-mi" class="btn">Conocer más</a>
         </section>
 
-
-        <!-- CATEGORÍAS -->
-        <section class="categories">
-
-            <div class="container">
-
-                <div class="section-header">
-                    <p>EXPLORA</p>
-                    <h2>Encuentra tu estilo</h2>
-                </div>
-
-                <div class="category-grid">
-
-                    <a href="#" class="category-card">
-                        <div class="category-image women">
-                            <span>Mujer</span>
-                        </div>
-                    </a>
-
-                    <a href="#" class="category-card">
-                        <div class="category-image men">
-                            <span>Hombre</span>
-                        </div>
-                    </a>
-
-                    <a href="#" class="category-card">
-                        <div class="category-image accessories">
-                            <span>Accesorios</span>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-
+        <section class="about" id="sobre-mi">
+            <h2>Sobre este proyecto</h2>
+            <p>
+                Este es un ejemplo sencillo de un archivo index.html.
+                Puedes utilizarlo como punto de partida para practicar
+                desarrollo web, agregar JavaScript, crear formularios,
+                consumir APIs o construir una página más completa.
+            </p>
         </section>
-
-
-        <!-- PRODUCTOS -->
-        <section id="coleccion" class="products">
-
-            <div class="container">
-
-                <div class="section-header products-header">
-                    <div>
-                        <p>LO MÁS NUEVO</p>
-                        <h2>Nueva colección</h2>
-                    </div>
-
-                    <a href="#" class="view-all">
-                        Ver todos →
-                    </a>
-                </div>
-
-
-                <div class="product-grid">
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-                            <span class="product-tag">
-                                NUEVO
-                            </span>
-                        </div>
-
-                        <div class="product-info">
-                            <h3>Camisa Oversize</h3>
-                            <p>Camisas</p>
-                            <strong>S/ 89.90</strong>
-                        </div>
-
-                        <button class="add-cart">
-                            Añadir al carrito
-                        </button>
-
-                    </article>
-
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-                            <span class="product-tag">
-                                NUEVO
-                            </span>
-                        </div>
-
-                        <div class="product-info">
-                            <h3>Pantalón Cargo</h3>
-                            <p>Pantalones</p>
-                            <strong>S/ 129.90</strong>
-                        </div>
-
-                        <button class="add-cart">
-                            Añadir al carrito
-                        </button>
-
-                    </article>
-
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-                        </div>
-
-                        <div class="product-info">
-                            <h3>Casaca Denim</h3>
-                            <p>Casacas</p>
-                            <strong>S/ 159.90</strong>
-                        </div>
-
-                        <button class="add-cart">
-                            Añadir al carrito
-                        </button>
-
-                    </article>
-
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-                        </div>
-
-                        <div class="product-info">
-                            <h3>Polera Essential</h3>
-                            <p>Poleras</p>
-                            <strong>S/ 99.90</strong>
-                        </div>
-
-                        <button class="add-cart">
-                            Añadir al carrito
-                        </button>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- BANNER -->
-        <section class="promo">
-
-            <div class="promo-content">
-
-                <p>OFERTA ESPECIAL</p>
-
-                <h2>
-                    20% OFF
-                </h2>
-
-                <p>
-                    En tu primera compra.
-                </p>
-
-                <a href="#coleccion" class="btn btn-light">
-                    Comprar ahora
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- NOSOTROS -->
-        <section id="nosotros" class="about">
-
-            <div class="container about-content">
-
-                <div>
-                    <p class="section-label">
-                        SOBRE NOSOTROS
-                    </p>
-
-                    <h2>
-                        Moda que habla<br>
-                        por ti.
-                    </h2>
-                </div>
-
-                <div>
-                    <p>
-                        En Urban Style creemos que la ropa es una forma
-                        de expresión. Creamos prendas modernas y versátiles
-                        para que puedas construir tu propio estilo.
-                    </p>
-
-                    <a href="#" class="text-link">
-                        Conoce nuestra historia →
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
     </main>
 
-
-    <!-- FOOTER -->
-    <footer id="contacto" class="footer">
-
-        <div class="container footer-grid">
-
-            <div>
-                <a href="#" class="logo footer-logo">
-                    URBAN<span>STYLE</span>
-                </a>
-
-                <p>
-                    Moda contemporánea para todos los días.
-                </p>
-            </div>
-
-
-            <div>
-                <h4>Tienda</h4>
-
-                <a href="#coleccion">Nueva colección</a>
-                <a href="#">Mujer</a>
-                <a href="#">Hombre</a>
-                <a href="#">Accesorios</a>
-            </div>
-
-
-            <div>
-                <h4>Ayuda</h4>
-
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Envíos</a>
-                <a href="#">Cambios y devoluciones</a>
-                <a href="#">Contacto</a>
-            </div>
-
-
-            <div>
-                <h4>Síguenos</h4>
-
-                <div class="social">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">TikTok</a>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="container footer-bottom">
-            <p>
-                © 2026 Urban Style. Todos los derechos reservados.
-            </p>
-        </div>
-
+    <footer>
+        <p>© 2026 Mi Sitio Web</p>
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 </html>
